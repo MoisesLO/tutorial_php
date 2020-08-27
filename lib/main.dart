@@ -32,18 +32,39 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: false,
-        title: Text(widget.title),
-      ),
-      body: ListView(
-            children: [
-              ListTile(
-                leading: Icon(Icons.map),
-                title: Text('Map'),
-              )
-            ],
-          )
-    );
+        appBar: AppBar(
+          centerTitle: false,
+          title: Text(widget.title),
+        ),
+        body: ListView(
+          children: [
+            ExpansionTile(
+              leading: Icon(Icons.add_box),
+              title: Text("Introduccion a PHP"),
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.only(left: 15),
+                  child: ListTile(
+                    leading: Icon(Icons.map),
+                    title: Text('Etiquetas de Cierre'),
+                  ),
+                ),
+              ],
+            ),
+            ExpansionTile(
+              leading: Icon(Icons.add_box),
+              title: Text("Estructuras Condicionales PHP"),
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.only(left: 15),
+                  child: ListTile(
+                    leading: Icon(Icons.arrow_forward),
+                    title: Text('Etiquetas de Cierre'),
+                  ),
+                ),
+              ],
+            )
+          ],
+        ));
   }
 }
