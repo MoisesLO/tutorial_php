@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'paginas/introduccion/1.dart';
+import 'paginas/introduccion/introduccion_1.dart';
 
 void main() {
   runApp(MyApp());
@@ -50,8 +50,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 Padding(
                   padding: const EdgeInsets.only(left: 15),
                   child: ListTile(
-                    leading: Icon(Icons.map),
+                    leading: Icon(Icons.insert_drive_file),
                     title: Text('Etiquetas de Cierre'),
+                    onTap: (){
+                      Navigator.pushNamed(context, '/introduccion_1');
+                    },
                   ),
                 ),
               ],
@@ -63,8 +66,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 Padding(
                   padding: const EdgeInsets.only(left: 15),
                   child: ListTile(
-                    leading: Icon(Icons.arrow_forward),
-                    title: Text('Etiquetas de Cierre'),
+                    leading: Icon(Icons.insert_drive_file),
+                    title: Text('Etiquetas de Cierree'),
                   ),
                 ),
               ],
