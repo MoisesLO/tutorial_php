@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'paginas/introduccion/1.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,6 +9,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/introduccion_1': (context) => Introduccion_1(),
+      },
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
