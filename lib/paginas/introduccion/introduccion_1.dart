@@ -22,6 +22,9 @@ class Home extends StatelessWidget {
       children: [
         HtmlWidget(
           kHtml,
+        ),
+        Padding(
+          padding: const EdgeInsets.all(25),
         )
       ],
     );
