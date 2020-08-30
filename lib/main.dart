@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'paginas/introduccion/introduccion_1.dart';
 import 'paginas/introduccion/introduccion_2.dart';
+import 'paginas/introduccion/introduccion_3.dart';
+import 'paginas/introduccion/introduccion_4.dart';
+import 'paginas/introduccion/introduccion_5.dart';
+import 'paginas/introduccion/introduccion_6.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,6 +20,14 @@ class MyApp extends StatelessWidget {
             Introduccion_1(ModalRoute.of(context).settings.arguments),
         '/introduccion_2': (context) =>
             Introduccion_2(ModalRoute.of(context).settings.arguments),
+        '/introduccion_3': (context) =>
+            Introduccion_3(ModalRoute.of(context).settings.arguments),
+        '/introduccion_4': (context) =>
+            Introduccion_4(ModalRoute.of(context).settings.arguments),
+        '/introduccion_5': (context) =>
+            Introduccion_5(ModalRoute.of(context).settings.arguments),
+        '/introduccion_6': (context) =>
+            Introduccion_6(ModalRoute.of(context).settings.arguments),
       },
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -68,29 +80,29 @@ class MyHomePage extends StatelessWidget {
                 ListTile(
                   title: Text('3 - Programa "Hola Mundo" en PHP'),
                   onTap: () {
-                    Navigator.pushNamed(context, '/introduccion_1',
+                    Navigator.pushNamed(context, '/introduccion_3',
                         arguments: '3 - Programa "Hola Mundo" en PHP');
                   },
                 ),
                 ListTile(
-                  title: Text('4 - Un programita más útil que "Hola Mundo'),
+                  title: Text('4 - Mas que "Hola Mundo'),
                   onTap: () {
-                    Navigator.pushNamed(context, '/introduccion_1',
+                    Navigator.pushNamed(context, '/introduccion_4',
                         arguments:
-                            '4 - Un programita más útil que "Hola Mundo');
+                            '4 - Mas que "Hola Mundo');
                   },
                 ),
                 ListTile(
                   title: Text('5 - Tipos de variables'),
                   onTap: () {
-                    Navigator.pushNamed(context, '/introduccion_1',
+                    Navigator.pushNamed(context, '/introduccion_5',
                         arguments: '5 - Tipos de variables');
                   },
                 ),
                 ListTile(
                   title: Text('6 - Variables de tipo string'),
                   onTap: () {
-                    Navigator.pushNamed(context, '/introduccion_1',
+                    Navigator.pushNamed(context, '/introduccion_6',
                         arguments: '6 - Variables de tipo string');
                   },
                 ),
