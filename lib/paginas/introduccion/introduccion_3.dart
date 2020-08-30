@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
 
-class Introduccion_2 extends StatelessWidget {
+class Introduccion_3 extends StatelessWidget {
   final String title;
-  Introduccion_2(this.title);
+  Introduccion_3(this.title);
   @override
   Widget build(BuildContext context) {
     return Scaffold(

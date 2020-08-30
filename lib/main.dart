@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'paginas/introduccion/introduccion_1.dart';
+import 'paginas/introduccion/introduccion_2.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,6 +14,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/introduccion_1': (context) =>
             Introduccion_1(ModalRoute.of(context).settings.arguments),
+        '/introduccion_2': (context) =>
+            Introduccion_2(ModalRoute.of(context).settings.arguments),
       },
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -58,7 +61,7 @@ class MyHomePage extends StatelessWidget {
                 ListTile(
                   title: Text('2 - Instalación del entorno XAMPP'),
                   onTap: () {
-                    Navigator.pushNamed(context, '/introduccion_1',
+                    Navigator.pushNamed(context, '/introduccion_2',
                         arguments: '2 - Instalación del entorno XAMPP');
                   },
                 ),
